@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com/"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        fontFamily: {
+          sans: ['Mulish', 'sans-serif'],
+          mono: ['Rokkitt', 'monospace']
+        }
+      }
+    }
+  </script>
+  <title>Document</title>
+</head>
+<body>
+  <div class="flex items-center justify-center min-h-screen bg-rose-50">
+    <div class="flex flex-col space-y-5 bg-white shadow-2xl rounded-2xl md:flex-row md:space-y-0 overflow-hidden relative">
+<!--       left side -->
+      <div class="p-6 md:p-12">
+        <h2 class="font-mono mb-3 text-4xl font-bold">Login</h2>
+        <p class="max-w-sm font-light font-sans text-gray-400 mb-6">Login to your account so you can interact with other people from around the globe.</p>
+        <input type="text" class="p-3 w-full border border-gray-300 rounded-md placeholder:text-gray-300 placeholoder:font-light" placeholder="Enter you email address">
+        
+        <div class="flex flex-col space-y-3 mt-5 justify-between md:flex-row md:space-y-0">
+          <div class="font-thin text-cyan-700 text-center">Forgot password?</div>
+          <button class="px-5 py-2 bg-cyan-700 border border-cyan-700 text-white hover:bg-white hover:text-cyan-700 rounded-xl transition duration-150 shadow-lg">Login</button>
+        </div>
+        <div class="border-b border-b-gray-300 mt-6"></div>
+        <p class="text-center font-light text-gray-400 text-sm p-6">Or login using these options:</p>
+        
+        <div class="flex flex-col space-y-3 md:flex-row md:space-y-0 md:space-x-4 justify-center">
+          
+          <button class="flex flex-row justify-center space-x-3 px-5 py-3 items-center border border-gray-400 shadow-sm rounded-lg hover:shadow-lg transition duration-150">
+            <img src="https://www.edigitalagency.com.au/wp-content/uploads/Facebook-logo-blue-circle-large-transparent-png.png" alt="" class="w-6">
+            <span class="font-thin text-black">Facebook</span>
+          </button>
+          
+          
+          <button class="flex flex-row justify-center space-x-3 px-5 py-3 items-center border border-gray-400 shadow-sm rounded-lg hover:shadow-lg transition duration-150">
+            <img src="https://www.edigitalagency.com.au/wp-content/uploads/new-Twitter-logo-x-black-png.png" alt="" class="w-6">
+            <span class="font-thin text-black">Twitter</span>
+          </button>
+          
+          
+          <button class="flex flex-row justify-center space-x-3 px-5 py-3 items-center border border-gray-400 shadow-sm rounded-lg hover:shadow-lg transition duration-150">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/768px-Google_%22G%22_logo.svg.png" alt="" class="w-6">
+            <span class="font-thin text-black">Google</span>
+          </button>
+          
+        </div>
+        
+        
+      </div>
+      
+<!--       right side -->
+      
+      <img src="https://i.pinimg.com/236x/d1/d4/63/d1d46381d3c104837c94190352b4186b.jpg" alt="" class="hidden md:block">
+      
+      <div class="flex items-center justify-center bg-gray-200 absolute w-8 h-8 rounded-full right-3 -top-3 md:top-3 cursor-pointer md:bg-white">X</div>
+      
+    </div>
+  </div>
+</body>
+</html>
